@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>exemplo formulario HTMl</title>
+	</head>
+	<body>
+	   <header>
+            <h3> Fomulários e inputs</h3>
+       </header>
+       <main>
+                <form id="register form" method="POST">
+                    <label>nome completo</label>
+                    <input type="text" id="nome" name="nome"
+                    required />
+                    <br>
+                    <label for="email" >Endereço de e-mail</label>
+                    <input type="email" id="'email" name="nome"/>
+                    <br>
+                    <label for="senha">Informe sua senha</label>
+                    <input type="password" id ='senha' name="senha"
+                    required/>
+                    <br>
+
+                    <label for="mensagem">informe sua mensagem</label>
+
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="30"></textarea>
+                    <br>
+                    <label for="evento">Selecione o evento escolhido</label>
+                    <select id="evento" name="evento">
+                        <option value="Rock">show de rock</option>
+                        <option value="modao">show de sertanejo</option>
+                        <option value="teatro">teatro: comédia</option>
+                    </select>
+                        <br>
+                        <label for="termos">
+                            <input type="chekbox" id="termos" name="termos"
+                            required>
+                            Aceito os termos de uso
+                        </label>
+                        <br>
+                        <label><input type="radio" name="pagamento" value="pix"/>pix</label>
+                        <label><input type="radio" name="pagamento" value="cartão"/>cartão</label>
+
+                    <input type="submit" value="cadastrar" />
+                    
+                </form>
+       </main>
+       <footer>
+            <p> Desenvolvido por Antônio</p>
+       </footer>
+
+        <script> document.getElementById(resgisterForm).addEventListener('submit', function (event)
+        {
+            event.preventDefault;
+            const nome = document.getElementById('nome').value;
+            alert('Ola,' + nome +'cadastro enviado com sucesso');
+        })
+        </script>
+        </body>
+</html>
